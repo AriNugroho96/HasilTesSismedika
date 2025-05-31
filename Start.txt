@@ -1,0 +1,53 @@
+Bagian A – Pengetahuan Dasar QA (Pilihan Ganda & Singkat)
+
+1.Error adalah kesalahan yang di lakukan oleh developer. biasanya di sebabkan oleh tim developer sepeti coding yang kurang atau salah. 
+Contoh dari BE mengirimkan parameter untuk di tampilkan FE, akan tetapi FE tidak menambahkan code tersebut yang menyebabkan tidak tampil data yang di kirimkan oleh BE.
+
+Defect adalah Ketidak sesuaian dengan spesifikasi/persyaratan yang sudah ditentukan. 
+Contoh hasil eksekusi dari FE dan BE tidak sinkron yang menyebabkan aplikasi yang sudah di buat menajdi error tidak berfungsi sesuai pesyaratan yang sudah di tentukan.
+
+Bug adalah Defect yang di temukan saat pengujian akibat dari adanya error. 
+Contoh Saat kita ingin melihat data di menu A akan tetapi data tersebut tidak tampil saat kita klik menu "A"  hanya menampilkan list data yang  kosong, nah itu biasanya di sebakan adanya error dan biasanya di kenal Bug dan dalam QA juga bisa di sebut Defect atau fault.
+
+2. Regression Testing adalah pengujian ulang yang di lakukan setelah ada perubahan code baru atau bug yang di selesaikan oleh tim developer yang suddah di deploy. Biasanya dilakukan setelah tim developer menyelesaikan pembarua code (bisa dari bug atau perubahan code baru) atau dari bug yang telah di selesaikan yang sudah di rilis tim developer di dev,stg atau prod, Tugas SQA setelah itu di Dev,stg atau prod SQA, akan melakukan pengujian ulang dari Fungsional dan Non-fungsional secara menyeluruh untuk mememastikan perubahan tersebut tidak mempengaruhi fitur-fitur lain dari hasil perubahan tersebut.
+
+3. Sebutkan lifecycle dari bug/defect.
+   1.Baru (New)
+   2.Ditugaskan (Assigned)
+   3.Terbuka / Dalam Proses (Open / In Progress)
+   4.Ditunda (Deferred / Postponed)
+   5.Ditolak (Rejected)
+   6.Tidak Dapat Direproduksi (Cannot Reproduce / Not Reproducible)
+   7.Perlu Lebih Banyak Informasi (Need More Info / On Hold)
+   8.Diperbaiki (Fixed)
+   9.Untuk Pengujian (Ready for Test / To Be Tested)
+   10.Diverifikasi / Diuji (Verified / Tested)
+   11.Ditutup (Closed)
+
+4.-Test Scenario Adalah dokumentasi tingkat tinggi yang menjelaskan end to end dari fungsionalitas yang akan diuji.
+Contoh : Fitur login 
+Test Scenario 1.Periksa Fungsi Login
+
+-Test Case adalah langkah-langkah pengujian yang pasti, data, hasil yang diharapkan untuk menguji semua fitur aplikasi. Bisanya berisi pengujian Positif dan Negative
+Contoh: Login
+   1.Positif Case : Login dengan email dan password yang benar
+   2.Negative Case : 
+      -Login dengan email yang salah
+      -Login dengan email yang belum terdaftar
+      -Login dengan password yang salah
+
+5.Bug Severity
+adalah ukuran dampak suatu bug pada pengembangan atau fungsi fitur aplikasi saat sedang digunakan. Mengacu pada ukuran dampak bug pada fungsi perangkat lunak
+
+-Low (Bug tidak akan mengakibatkan kerusakan sistem)
+-Minor (Menghasilkan beberapa perilaku yang tidak diharapkan atau tidak diinginkan, tetapi tidak cukup untuk mengganggu fungsi sistem) 
+-Medium (penilaian sebuah bug masuk kategori medium ini tergolong subjektif. Yang menjadi pembeda bug medium dengan bug minor tentu dampaknya terhadap sistem yang memang satu tingkat lebih tinggi. Bug ini masuk dalam kategori yang perlu dibenahi karena efeknya cukup mengganggu pada alur kerja sistem.)
+-Major (Bug yang mampu meruntuhkan sebagian besar sistem) 
+-Critical (Tingkat tertinggi, sistem benar-benar tidak bisa digunakan sama sekali)
+ 
+
+Bug Priority
+adalah ukuran urgensi atau seberapa cepat sebuah bug perlu diperbaiki dan dirilis.
+-Low (Bug dapat diperbaiki di kemudian hari. Bug lain yang lebih serius diprioritaskan)
+-Medium (Bug dapat diperbaiki dalam proses pengembangan dan pengujian normal)
+-High (Bug harus diselesaikan paling awal karena berdampak buruk pada sistem dan membuatnya tidak dapat digunakan)
